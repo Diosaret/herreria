@@ -1,0 +1,237 @@
+
+.navbar{
+
+	box-shadow: 5px 5px 7px #000;
+	opacity: .9;
+	z-index: 5;
+}
+
+
+
+.navbar .nav-item .nav-link:hover{
+
+color:rgba(64,64,72);	
+	 
+}
+
+.navbar .nav-item .nav-link  {
+color: #94210c;
+}
+
+
+
+.main-header{
+position: relative;
+	background: url(../imagenes/foto5.jpg);
+	background-size: cover;
+	min-height: 750px;
+	top: 6px;
+}
+
+.background-overlay{
+position: absolute;
+	background: rgba(64,64,72,.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.ima{
+
+	width: 100%;
+	height: 100%;
+    padding: 15px;
+
+
+}
+
+.texto{
+
+margin-top: 200px;
+
+}
+
+
+.icono{
+
+color:black;
+margin-left:10px;
+display:inline-flex;
+
+font-size: 1.8em;
+width: 35px;
+height: 35px;
+
+border-radius: 80%;
+
+}
+.icono2{
+
+color:black;
+margin-left:10px;
+display: inline-flex;
+
+font-size: 1.8em;
+width: 35px;
+height: 35px;
+
+border-radius: 80%;
+
+}
+
+.icono:hover{
+color: rgba(64,64,72);
+	
+text-decoration: none;
+}
+
+
+.head{
+background: rgba(64,64,72,.4);;
+min-height: 700px;
+
+}
+
+.fotorei{
+margin-top: 140px;
+margin-left: -70px;
+width: 350px;
+height: 450px;
+border-radius: 100%;
+border: 3px solid;
+border-color: #94210c;
+
+}
+
+
+.texto1{
+
+margin-top:90px;
+
+}
+
+.te{
+	color: black;
+}
+
+
+
+.he{
+background: rgba(64,64,72,.8); 
+min-height: 300px;
+
+}
+
+.fotocarrusel img{
+width: 75%;
+margin-top: 10px;
+align-content: center;
+margin: auto;
+
+
+}
+
+.fot:hover{
+
+filter: brightness(85%);
+}
+
+
+
+
+
+.gallery{
+	position: relative;
+}
+
+
+
+
+
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+
+.contacto{
+	margin-left: 20px;
+padding: 5px;
+margin-top: 70px;
+
+}
+.con{
+	margin-left: 20px;
+padding: 5px;
+margin-top: 80px;
+
+}
+
+#menu{
+    
+   font-size:10px;
+}
+
+
+
+@media screen and (min-width: 480px){
+
+.ima1{
+margin-top: 20px;
+
+}
+
+
+
+
+
+.head{
+ 
+min-height: 700px;
+
+}
+
+
+
+
+	}
+
+@media screen and (max-width: 750px){
+
+
+
+
+
+.head{
+ 
+min-height: 1200px;
+
+}
+
+
+
+
+
+
+
+.fotorei{
+	margin-top: 90px;
+
+width: 250px;
+height: 350px;
+
+}
+
+	}

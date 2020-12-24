@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fortare Taccarelli</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href= "imagenes/4.ico" type="image/x-icon" />
+<script src="js/sweetalert.min.js"></script>
+
+<script language="javascript" src="js/jquery-1.3.min.js"></script>
+<script language="javascript">
+
+$(document).ready(function() {
+
+   
+    $(' #fo3').submit(function() {
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function(data) {
+                $('#resultado').html(data);
+             document.forms['fo3'].reset(); 
+
+            }
+        });
+        
+
+
+        return false;
+    }); 
+})  ;
+
+
+
+</script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+  <a class="navbar-brand" href="index.html"><img src="imagenes/4.png" alt="Reinaldo Taccarelli" style="width: 60%"  style="height: 30%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="menu h4 nav-link " href="index.html">Inicio </a>
+      </li>
+  <li class="nav-item">
+        <a class="nav-link h4" href="nosotros.html">Nosotros</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link h4" href="trabajos.html">Trabajos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link h4" href="contacto.html">Contacto</a>
+      </li>
+
+
+
+    </ul> 
+    
+    
+  </div>  
+<div>
+    <a href="https://www.facebook.com/reinaldo.taccarelli" target="_blank"><i class="icon-facebook-squared icono"></i></a>
+<a href="https://www.instagram.com/reitaccarelli/" target="_blank"><i class="icon-instagram icono"></i></a>
+
+</div></div>
+
+</nav>
+
+<!--Header-->
+
+<header class="main-header">
+
+	<div class="background-overlay text-white py-8">
+		
+       <div class="container">
+       	
+          <div class="row">
+          	
+             <div class="col-md-7 text-center  justify-content-center align-self-center">
+             	
+
+              
+
+
+
+             </div>
+
+<div class="col-md-5 texto">
+	
+
+                <h2>Reinaldo Taccarelli</h2>
+<br>
+                <p class="h4">Tengo mas de 15 años desempeñando este rubro, cada trabajo es un proyecto el cual realizo con mucho compromiso y dedicación.</p>
+
+<br>
+<a href="nosotros.html" class="btn btn-outline-secondary btn-lg text-white">Leer Más</a>
+
+
+</div>
+
+
+
+
+          </div>
+
+       </div>
+
+
+	</div>
+
+
+</header>
+
+
+<!--fotos-->
+
+
+<section class="py-5 bg-light">
+	<h3 class="text-center">Trabajos</h3>
+	<div class="container">
+		<div class="row">
+
+
+		<div class="col-md-4 border border-dark ">
+
+
+<a href="trabajos.html"><img class="ima" src="imagenes/f11.jpg" alt="foto"></a>
+
+</div>
+
+        <div class="col-md-4 border border-dark ">
+        	
+	
+
+
+<a href="trabajos.html"><img class="ima" src="imagenes/f10.jpg" alt="foto"></a>
+
+
+</div>
+
+	    <div class="col-md-4 border border-dark ">
+	    		
+	
+
+<a href="trabajos.html"><img class="ima" src="imagenes/f3.jpg" alt="foto"></a>
+
+</div>
+	    
+
+
+
+
+
+
+</div>
+
+	</div>
+
+</section>
+
+<section class="bg-dark py-5">
+	<div  class="container">
+		<div class="row">
+			<div class="col-lg-7">
+
+				<h3 class="text-white">Contacto</h3>
+			
+
+<form action="correo.php" name="fo3" id="fo3" method="POST" >
+	
+<div  class="input-group mb-3">
+	<div class="input-group-prepend">
+		
+<i class="icon-user-female input-group-text"></i>
+	</div>
+<input type="text" class="form-control" placeholder="Nombre" name="nombre" required="required">
+
+
+</div>
+
+	
+<div  class="input-group mb-3">
+	<div class="input-group-prepend">
+		
+<i class="icon-mail input-group-text"></i>
+	</div>
+<input type="text" class="form-control" placeholder="Correo Electrónico" name="correo" required="required">
+
+
+</div>
+
+
+	
+<div  class="input-group mb-3">
+	<div class="input-group-prepend">
+		
+<i class="icon-pencil input-group-text"></i>
+	</div>
+
+<textarea cols="30" rows="10"  class="form-control" placeholder="Escribe tu mensaje" name="mensaje" required="required"> </textarea>
+
+
+</div>
+<input type="submit" value="
+Enviar Mensaje
+" class="btn btn-secondary btn-lg btn-blog" >
+	
+
+</form>
+
+			</div>
+
+<div class="col-lg-5 align-self-center" >
+
+<img src="imagenes/4.png" alt="foto" class="ima1">
+</div>
+		</div>
+	</div>
+	<div id="resultado"></div>
+	</section>
+
+
+<footer>
+	
+	<div class="container p-3 text-center bg-light">
+		<p>Fortare Taccarelli. Copyright &copy; 2020</p>
+
+
+	</div>
+</footer>
+
+
+
+<script type="text/javascript" src="js/popper.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/bootstrap.min.js" charset="utf-8"></script>
+
+</body>
+</html>
